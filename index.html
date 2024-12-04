@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="気軽に割り勘の計算ができるサイトです. 団体で旅行などに行った際にお使いください.">
+    <link rel="stylesheet" href="warikan.css">
+    
+    <title>割り勘清算</title>
+  </head>
+  <body>
+    <h1>メンバー</h1>
+    <div class="container">
+      <table>
+          <tbody>
+              <tr>
+                  <td><input type="text" name="name" maxlength="15"></td>
+                  <td><button class="remove">×</button></td>
+              </tr>
+              <tr>
+                  <td><input type="text" name="name" maxlength="15"></td>
+                  <td><button class="remove">×</button></td>
+              </tr>
+          </tbody>
+      </table>
+      <div class="bottons">
+        <button id="addRow">+ 追加</button>
+        <button id="getValues">メンバー決定</button>
+      </div>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

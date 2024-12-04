@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="warikan.css">
+    
+    <title>割り勘清算支払い情報入力</title>
+  </head>
+  <body>
+    <h1>お支払い内容</h1>
+    <div id="memberbox">
+      <h2>メンバー</h2>
+      <div id="members"></div>
+    </div>
+    <div id="splits">
+      <h2>割り勘</h2>
+      <div id="split">
+        <table>
+          <tbody>
+              <tr>
+                <td><input class="material" type="text" name="material" maxlength="15" placeholder="項目"></td>
+                <td>¥<input class="price" type="tel" name="price" maxlength="9" placeholder="金額"></td>
+                <td><select class="greeter" name="greeter" label="立替人" required onchange="changeColor(this)"><option value="" hidden class="spliter">立替人</option></select></td>
+                <td><button class="remove">×</button></td>
+              </tr>
+          </tbody>
+        </table>
+        <div class="bottons">
+          <button id="addSp">+ 追加</button>
+        </div>
+      </div>
+    </div>
+    <div id="treats">
+      <h2>奢り</h2>
+      <div id="treat">
+        <table>
+          <tbody>
+              <tr>
+                <td><input class="material" type="text" name="material" maxlength="15" placeholder="項目"></td>
+                <td>¥<input class="price" type="tel" name="price" maxlength="9" placeholder="金額"></td>
+                <td><select class="payer" name="payer" label="おごった人" required onchange="changeColor(this)"><option value="" hidden class="spliter">奢り</option></select></td>
+                <td><select class="payee" name="payee" label="おごられた人" required onchange="changeColor(this)"><option value="" hidden class="spliter">奢られ</option></select></td>
+                <td><button class="remove">×</button></td>
+              </tr>
+          </tbody>
+        </table>
+        <div class="bottons">
+          <button id="addTr">+ 追加</button>
+        </div>
+      </div>
+    </div>
+    <div id="calculater">
+      <div class="bottons">
+        <button id="calculate">清算する</button>
+      </div>
+      <div id="result"></div>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/input.js"></script>
+  </body>
+</html>
