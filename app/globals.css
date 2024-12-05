@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  @apply bg-pink-500;
+}
+
+h1 {
+  @apply text-center text-white;
+}
+
+.container {
+  @apply mx-auto;
+  @apply md:w-[500px];
+}
+
+.container table {
+  @apply flex justify-around;
+}
+
+input {
+  @apply w-[300px] text-2xl text-white my-2.5 py-2.5 bg-transparent border-b border-white focus:outline-none;
+}
+
+.remove {
+  @apply w-[30px] h-[30px] text-[20px] bg-white text-pink-500 border-none rounded-full;
+}
+
+.bottons {
+  @apply flex justify-center;
+}
+
+#addRow,
+#getValues,
+#addSp,
+#addTr {
+  @apply w-[130px] h-[40px] text-[16px] bg-white text-pink-500 border-none my-5 rounded-lg;
+}
+
+button:hover {
+  @apply cursor-pointer;
+}
+
+tr:hover {
+  @apply cursor-move;
+}
+
+#memberbox,
+#splits,
+#treats,
+#calculater {
+  @apply md:w-[500px] mx-auto;
+}
+
+#memberbox h2,
+#splits h2,
+#treats h2 {
+  @apply text-white;
+}
+
+#members,
+#splits,
+#treats {
+  @apply text-white;
+}
+
+#members li {
+  @apply ml-4 inline-block outline-none overflow-hidden pr-2.5 text-white bg-pink-200 rounded-lg shadow-[0_0_0_2px_pink-200] border-2 border-dashed border-white py-0 px-4;
+}
+
+#split table,
+#treat table {
+  @apply w-[450px];
+}
+
+#split table tbody tr,
+#treat table tbody tr {
+  @apply flex justify-between;
+}
+
+.material,
+.price,
+.greeter,
+.payer,
+.payee {
+  @apply w-[50px] text-[10px] text-white py-2.5 bg-transparent border-b-2 border-white focus:outline-none;
+}
+
+#calculate {
+  @apply text-center w-[200px] h-[40px] text-[26px] bg-yellow-200 text-pink-500 border-none my-5 rounded-lg;
+}
+
+#result table {
+  @apply w-full text-yellow-100;
+}
+
+#result table th {
+  @apply text-left w-[15%];
+}
+
+#result table td {
+  @apply text-left w-[85%];
+}
+
+#result p {
+  @apply text-red-500;
+}
